@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>form-php</title>
+    <link rel="stylesheet" href="style.css\style.css">
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient( to bottom, rgba(75, 41, 71, 0.25) 0%, rgba(42, 60, 87, 0.4) 100%), linear-gradient(135deg, #670d10 0%, #092756 100%);
+            overflow: hidden;
+        }
+        
+        body * {
+            font-family: "Open Sans", sans-serif;
+            line-height: 160%;
+        }
+        
+        .login {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -150px 0 0 -150px;
+            width: 300px;
+            height: 300px;
+        }
+        
+        .login h1 {
+            color: #fff;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            letter-spacing: 1px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        input {
+            width: 100%;
+            margin-bottom: 10px;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            font-size: 15px;
+            color: #fff;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            border-radius: 4px;
+        }
+        
+        .btn {
+            margin: 5px 0;
+            width: 100%;
+            background-color: transparent;
+            border: 2px solid #393f46;
+            border-radius: 0.6em;
+            color: #fb6656;
+            cursor: pointer;
+            align-self: center;
+            font-size: 1rem;
+            padding: 1.2em 2.0em;
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        
+        .btn:hover,
+        .btn:focus {
+            color: #fff;
+            outline: 0;
+        }
+        
+        .first {
+            -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+            transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+        }
+        
+        .first:hover {
+            box-shadow: 0 0 40px 40px #3137fb inset;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <!DOCTYPE html>
+    <html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="./styles.css">
+
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div class="login">
+            <hr>
+            <h1>Login
+                <hr>
+            </h1>
+
+            <form action="/form-php/dist/formulario.php" method="POST">
+                <span class="input-group-addon"><i class="fa-user"><!-- icone --></i></span>
+                <input type="text" name="nome" placeholder="Usuário" required="required" autofocus />
+                <input type="password" name="senha" placeholder="Senha" required="required" />
+
+                <button class="btn first" type="submit" class="btn">
+                    Enviar
+                </button>
+
+                <button class="btn first" type="reset" class="btn">
+                    Cancelar
+                </button>
+
+            </form>
+        </div>
+    </body>
+
+    </html>
+
+</body>
+
+</html>
